@@ -1,0 +1,50 @@
+body {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* จัดเรียงเนื้อหาให้อยู่กึ่งกลางในแนวตั้ง */
+    align-items: center; /* จัดเรียงเนื้อหาให้อยู่กึ่งกลางในแนวนอน */
+    background-color: lightpink;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gif {
+    margin-bottom: 20px;
+}
+
+.Yes,
+.No {
+    font-size: 4vw; /* กำหนดขนาดของตัวอักษรเป็นเปอร์เซ็นต์ของความกว้างของ viewport */
+    padding: 10px 20px; /* กำหนดขนาดของพื้นที่ padding ของปุ่ม */
+    margin: 5px; /* กำหนดระยะห่างระหว่างปุ่ม */
+    border: none; /* ลบเส้นขอบของปุ่ม */
+    border-radius: 5px; /* กำหนดรูปร่างของมุมของปุ่ม */
+    cursor: pointer; /* เปลี่ยนรูปแบบของเมาส์เป็นแถบ */
+    transition: all 0.3s ease; /* ทำให้การเปลี่ยนแปลงของปุ่มมีการเคลื่อนไหวอย่างนุ่มนวล */
+}
+
+.Yes:hover,
+.No:hover {
+    opacity: 0.8; /* ลดความโปร่งใสของปุ่มเมื่อมีการชี้เมาส์ไปที่ปุ่ม */
+}
+
+.Yes {
+    background-color: green; /* สีพื้นหลังสำหรับปุ่ม Yes */
+    color: white; /* สีของข้อความบนปุ่ม Yes */
+}
+
+.No {
+    background-color: red; /* สีพื้นหลังสำหรับปุ่ม No */
+    color: white; /* สีของข้อความบนปุ่ม No */
+}
+
+.text{
+    color: white;
+}
